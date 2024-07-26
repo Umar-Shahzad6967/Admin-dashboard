@@ -1,0 +1,18 @@
+#main {
+    font-weight: bold !important;
+}
+
+#main span {
+    color: red;
+}
+
+.card {
+    background-color: #1d2634;
+    color: #9e9ea4;
+    border: 2px solid #dc965a;
+}
+
+img {
+    height: 200px;
+    padding: 8px;
+}

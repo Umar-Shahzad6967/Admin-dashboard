@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+import Admin from './component/Admin/Admin'
+import Student from './component/Student/Student'
+import Teacher from "./component/Teacher/Teacher.js"
+import Main from "./component/Main/Main.js"
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/Admin' element={<Admin />} />
+          <Route path='/Teacher' element={<Teacher />} />
+          <Route path='/Student' element={<Student />} />
+
+
+        </Routes>
+      </BrowserRouter>
+    </>
+
+
+  )
 }
 
-export default App;
+export default App

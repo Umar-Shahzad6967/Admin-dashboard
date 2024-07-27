@@ -2,17 +2,17 @@ import React from 'react'
 import './Tsidebar.css'
 import { Link } from 'react-router-dom'
 import {
-    BsFillHouseFill, BsFillPeopleFill, BsFillCalendarFill, BsFillBookFill, BsFillPersonLinesFill,
-    BsFillPieChartFill, BsFillGearFill, BsFillCheckCircleFill
+    BsFillHouseFill, BsFillPeopleFill, BsFillCalendarFill, BsFillBookFill, BsFillCheckCircleFill,
+    BsFillPieChartFill, BsFillGearFill, BsFillEnvelopeFill
 }
     from 'react-icons/bs'
 
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
     return (
-        <aside id="sidebarT" className={openSidebarToggle ? "sidebar-responsive" : ""}>
+        <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive" : ""}>
             <div className='sidebar-title'>
                 <div className='sidebar-brand'>
-                    <BsFillHouseFill className='icon_header' /> TEACHER
+                    <BsFillHouseFill className='icon_header' /> Teachers
                 </div>
                 <span className='icon close_icon' onClick={OpenSidebar}>X</span>
             </div>
@@ -25,22 +25,12 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
                 </li>
                 <li className='sidebar-list-item'>
                     <a href="">
-                        <BsFillPeopleFill className='icon' /> My Students
+                        <BsFillCalendarFill className='icon' /> Students
                     </a>
                 </li>
                 <li className='sidebar-list-item'>
                     <a href="">
-                        <BsFillPersonLinesFill className='icon' /> My Classes
-                    </a>
-                </li>
-                <li className='sidebar-list-item'>
-                    <a href="">
-                        <BsFillCalendarFill className='icon' /> Attendance
-                    </a>
-                </li>
-                <li className='sidebar-list-item'>
-                    <a href="">
-                        <BsFillBookFill className='icon' /> Lesson Plans
+                        <BsFillBookFill className='icon' /> Courses
                     </a>
                 </li>
                 <li className='sidebar-list-item'>
@@ -51,6 +41,16 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
                 <li className='sidebar-list-item'>
                     <a href="">
                         <BsFillPieChartFill className='icon' /> Reports
+                    </a>
+                </li>
+                <li className='sidebar-list-item'>
+                    <a href="">
+                        <BsFillPeopleFill className='icon' /> My Teachers
+                    </a>
+                </li>
+                <li className='sidebar-list-item'>
+                    <a href="">
+                        <BsFillEnvelopeFill className='icon' /> Messages
                     </a>
                 </li>
                 <li className='sidebar-list-item'>

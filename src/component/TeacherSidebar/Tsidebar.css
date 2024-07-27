@@ -15,14 +15,6 @@
     margin-right: 5px;
 }
 
-a {
-    color: #9E9E9E;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-
 .close_icon {
     color: red;
     margin-left: 30px;
@@ -31,7 +23,6 @@ a {
 }
 
 .grid-container {
-    background-color: #c538ae;
     color: #9e9ea4;
     display: grid;
     grid-template-columns: 260px 1fr 1fr 1fr;
@@ -40,6 +31,12 @@ a {
         'sidebar header header header'
         'sidebar main main main';
     height: 100vh;
+}
+
+a {
+    color: #9E9E9E;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Header  */
@@ -60,10 +57,10 @@ a {
 /* End Header  */
 
 /* Sidebar  */
-#sidebarT {
+#sidebar {
     grid-area: sidebar;
     height: 100%;
-    background-color: rgb(33, 32, 32);
+    background-color: #263043;
     overflow-y: auto;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
